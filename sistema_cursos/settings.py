@@ -55,7 +55,9 @@ ROOT_URLCONF = 'sistema_cursos.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR/"templates_home/"
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
