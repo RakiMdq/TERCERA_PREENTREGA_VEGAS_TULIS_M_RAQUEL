@@ -8,10 +8,16 @@ def saludar(request):
     return pagina_html
 
 def saludar_html(request):
+    contexto= {
+        "profesor":"Juan",
+        "ayudantes":["Pipo","Pepa"],
+        "comision":522,
+
+    }
     http_response = render(
         request=request,
         template_name='home.html',
-        context={},
+        context=contexto,
     )
     return http_response
 
