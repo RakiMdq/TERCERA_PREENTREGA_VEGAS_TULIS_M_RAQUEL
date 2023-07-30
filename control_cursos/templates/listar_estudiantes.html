@@ -1,0 +1,7 @@
+<h3>Alumnos inscriptos: </h3>
+
+    <ul>
+        {% for estudiante in estudiantes%}
+        <li>{{estudiante.apellido}}, {{estudiante.nombre}}</li>
+        {% endfor %}
+    </ul>
