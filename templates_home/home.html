@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,11 +21,11 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Inicio</a>
-                <a class="navbar-brand" href="#!">Cursos</a>
-                <a class="navbar-brand" href="#!">Estudiantes</a>
+                <a class="navbar-brand" href="{% url 'inicio' %}">Inicio</a>
+                <a class="navbar-brand" href="{% url 'lista_cursos' %}">Cursos</a>
+                <a class="navbar-brand" href="{% url 'lista_estudiantes' %}">Estudiantes</a>
+                <a class="btn btn-primary" href="#">Registrarse</a>
 
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>
         </nav>
         
