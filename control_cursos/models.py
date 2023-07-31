@@ -28,8 +28,9 @@ class Profesor(models.Model):
     nombre = models.CharField(max_length=256)
     dni = models.CharField(max_length=32)
     email = models.EmailField(blank=True)
-    fecha_nacimiento = models.DateField(null=True, blank=True)
+    fecha_nacimiento = models.DateField(null=True)
     profesion = models.CharField(max_length=128)
+    bio = models.TextField(blank=True)
     
 
     def __str__(self):
