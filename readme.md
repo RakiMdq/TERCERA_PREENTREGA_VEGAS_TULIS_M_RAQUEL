@@ -1,6 +1,7 @@
 # copia del profesor
 
 # ProyectoCoder
+Este es un proyecto del curso de Python de CoderHouse 2023
 
 ## Instrucciones instalar proyecto en local
 + Crea una carpeta contenedora madre
