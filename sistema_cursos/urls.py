@@ -22,8 +22,7 @@ from sistema_cursos.views import saludar, saludar_html
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("estudios/", include("control_cursos.urls")),
-    path("saludo/", saludar),
-    path("saludo_con_html/", saludar_html)
+    
 ]
 
 
